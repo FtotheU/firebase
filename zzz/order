@@ -1,0 +1,54 @@
+<template>
+  <v-row justify="center">
+    <v-col cols="12" sm="9">
+      <v-card rounded="lg" min-height="50" color="grey lighten-2">
+        <v-toolbar color="deep-purple" dark dense flat>
+          <v-toolbar-title class="body-3"> รายการการจอง </v-toolbar-title>
+        </v-toolbar>
+        <v-list flat>
+          <v-list-item v-for="n in 4" :key="n" link>
+            <v-list-item-icon>
+              <v-avatar
+                class="mr-10"
+                color="grey darken-1"
+                size="32"
+              ></v-avatar>
+            </v-list-item-icon>
+
+            <v-list-item-content>
+              <v-list-item-title>นายเดชาวัต ยุธิธรรม</v-list-item-title>
+            </v-list-item-content>
+            <v-list-item-content>
+              <v-list-item-subtitle>ได้ทำการชำระเงินแล้ว</v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
+      </v-card>
+    </v-col>
+  </v-row>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    items: [
+      {
+        text: 'Dashboard',
+        disabled: false,
+        href: 'breadcrumbs_dashboard',
+      },
+      {
+        text: 'Link 1',
+        disabled: false,
+        href: 'breadcrumbs_link_1',
+      },
+      {
+        text: 'Link 2',
+        disabled: true,
+        href: 'breadcrumbs_link_2',
+      },
+    ],
+  }),
+}
+</script>
+<style></style>

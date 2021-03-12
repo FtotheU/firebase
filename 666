@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "TOYOTA Yaris ATIV",
+    "price": 1300,
+    "imgUrl": "https://www.toyota.co.th/media/product/color/360/yarisativ/desktop/white_pearl/white-pearl-01.png"
+  },
+  { 
+    "id": 2,
+    "title": "TOYOTA GR Yaris",
+    "price": 1200,
+    "imgUrl": "https://www.toyota.co.th/media/product/color/general/6ea3edbb1fbcc2348cd1f2d7a3767ee5214830a4.png"
+  },
+  {
+    "id": 3,
+    "title": "TOYOTA Vios",
+    "price": 1000,
+    "imgUrl": "https://www.toyota.co.th/media/product/color/360/vios/desktop/black/23.png"
+  },
+  {
+    "id": 4,
+    "title": "TOYOTA Commuter",
+    "price": 3500,
+    "imgUrl": "https://www.toyota.co.th/media/product/color/general/a7f476ae66e46d86a33da9855636f41ad8b50df6.png"
+  },
+  {
+    "id": 5,
+    "title": "TOYOTA Innova Crysta",
+    "price": 1900,
+    "imgUrl": "https://www.toyota.co.th/media/product/color/general/645ee61f0c2967f7be3a54acb04c1f76eeafdd2c.png"
+  },
+  {
+    "id": 6,
+    "title": "Hilux Revo Prerunner & 4x4",
+    "price": 480,
+    "imgUrl": "https://www.toyota.co.th/media/product/color/general/2d810e02ef5010c568254c867bcc232f6f47aba4.png"
+  }
+]

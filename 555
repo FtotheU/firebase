@@ -1,0 +1,120 @@
+<v-card class="mx-auto card" outlined v-for="car in carList" :key="car"
+          ><v-img
+            src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
+            class="img"
+          ></v-img>
+          <v-list-item>
+            <v-list-item-content>
+              <v-list-item-title class="headline mb-1">
+                {{ car.car }}
+              </v-list-item-title>
+              <v-list-item-subtitle>
+                ยี่ห้อ :{{ car.brand }}
+              </v-list-item-subtitle>
+              <v-list-item-subtitle>
+                ประตู :{{ car.door }}
+              </v-list-item-subtitle>
+              <v-list-item-subtitle> สี :{{ car.color }} </v-list-item-subtitle>
+              <v-list-item-subtitle>
+                ราคา :{{ car.prize }}
+              </v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-card-actions>
+            <v-btn outlined rounded text> จอง </v-btn>
+          </v-card-actions>
+        </v-card>
+
+        carList: [
+      {
+        src:
+          'https://images.autofun.co.th/file1/f716d1e870f8419da5b33812710934e1_456x258.jpg',
+        car: 'Toyota Yaris',
+        brand: 'Toyota',
+        door: '4',
+        seat: '5',
+        color: 'ขาว;',
+      },
+      {
+        src:
+          'https://images.autofun.co.th/file1/8092c6cb06fa4a97ac3994ed9b74fb3b_456x258.jpg',
+        car: 'Toyota Camry',
+        brand: 'Toyota',
+        door: '4',
+        seat: '5',
+        color: 'ดำ',
+      },
+      {
+        src:
+          'https://images.autofun.co.th/file1/ddc3f9021558401ca18c08279b32ab33_456x258.jpg',
+        car: 'Mitsubishi Mirage',
+        brand: 'Mitsubishi',
+        door: '4',
+        seat: '5',
+        color: 'เหลือง',
+      },
+      {
+        src:
+          'https://images.autofun.co.th/file1/3d67621883e148be90d35bb25b087df5_1072x604.jpg',
+        car: 'Mitsubishi Xpander',
+        brand: 'Mitsubishi',
+        door: '4',
+        seat: '7',
+        color: 'เทา',
+      },
+      {
+        src:
+          'https://images.autofun.co.th/file1/df43aa1b052845eaa8ac2cd1749049f6_456x258.jpg',
+        car: 'Mazda 3 Fastback',
+        brand: 'Mazda',
+        door: '4',
+        seat: '5',
+        color: 'เทา',
+      },
+      {
+        src:
+          'https://images.autofun.co.th/file1/c8148ed3c45a4c0b9335c7e11c4af80e_456x258.jpg',
+        car: 'Mazda CX-8',
+        brand: 'Mazda',
+        door: '4',
+        seat: '6-7',
+        color: 'แดง',
+      },
+      {
+        src:
+          'https://images.autofun.co.th/file1/2f95c93b698a40f4a7df9f4a611ebb47_456x258.jpg',
+        car: 'Hyundai Kona',
+        brand: 'Hyundai',
+        door: '4',
+        seat: '5',
+        color: 'ฟ้าน้ำทะเล',
+      },
+      {
+        src:
+          'https://images.autofun.co.th/file1/cc9d2217eb5c4758a435d2ef935ace7d_456x258.jpg',
+        car: 'Hyundai Ioniq',
+        brand: 'Hyundai',
+        door: '4',
+        seat: '5',
+        color: 'ขาว',
+      },
+      {
+        src:
+          'https://images.autofun.co.th/file1/6f89299e7c4e44b0adb304818374b373_456x258.jpg',
+        car: 'BMW X1',
+        brand: 'BMW',
+        door: '4',
+        seat: '5',
+        color: 'ขาว',
+      },
+      {
+        src:
+          'https://images.autofun.co.th/file1/8e1f9037a3f7453f8936e10195321e44_456x258.jpg',
+        car: 'BMW X5',
+        brand: 'BMW',
+        door: '4',
+        seat: '5',
+        color: 'ขาว',
+      },
+    ],
