@@ -1,9 +1,10 @@
 <template>
-  <v-row>
+  <v-row justify="center">
     <v-col cols="12" sm="12">
-      <v-card rounded="lg" min-height="50">
-        <h1 class="text-center">รายละเอียดรถยนต์</h1>
-      </v-card>
+    
+      <v-col cols="12" sm="12">
+        <h1 class="text-center">รายการรถยนต์</h1> </v-col
+      >
     </v-col>
     <v-col cols="12" sm="6">
       <v-card rounded="lg" min-height="400"
@@ -16,10 +17,10 @@
         </v-img
       ></v-card>
     </v-col>
-    <v-col cols="12" sm="6"
-      ><v-card rounded="lg" min-height="400" color="indigo accent-1">
-        <v-toolbar color="indigo accent-3" dark dense flat>
-          <v-toolbar-title class="body-2"> ชื่อยี่ห้อรถยนต์ </v-toolbar-title>
+    <v-col cols="12" sm="4"
+      ><v-card rounded="lg" color="white">
+        <v-toolbar color="light-blue" dark dense flat>
+          <v-toolbar-title class="body-3"> ชื่อยี่ห้อรถยนต์ </v-toolbar-title>
         </v-toolbar>
         <v-card-subtitle>001</v-card-subtitle>
         <v-card-text class="text--primary">
@@ -36,7 +37,7 @@
             <v-icon class="ic" x-large>mdi-car</v-icon> 555
           </div> </v-card-text
         ><v-card-actions>
-          <v-btn color="blue accent-2" rounded block> ทำสัญญาเช่า </v-btn>
+          <v-btn color="yellow" rounded block> ทำสัญญาเช่า </v-btn>
         </v-card-actions>
       </v-card>
     </v-col>

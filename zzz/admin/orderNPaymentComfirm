@@ -1,5 +1,8 @@
 <template>
-  <v-row justify="center">
+  <v-row justify="center"
+    ><v-col cols="12" sm="12">
+      <h1 class="text-center">ข้อมูลการชำระเงิน</h1>
+    </v-col>
     <v-col cols="12" sm="5">
       <v-row justify="center">
         <v-col cols="12" sm="12">

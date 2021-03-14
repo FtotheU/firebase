@@ -1,5 +1,7 @@
 <template>
-  <v-row justify="center"
+  <v-row justify="center">
+    <v-col cols="12" sm="12">
+      <h1 class="text-center">กรอกข้อมูลการสั่งจอง</h1> </v-col
     ><v-col cols="12" sm="4">
       <v-card rounded="lg" color="white">
         <v-toolbar color="light-blue" dark dense flat>

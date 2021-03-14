@@ -3,21 +3,17 @@
     <v-col cols="12" sm="12">
       <h1 class="text-center">รายละเอียดรถยนต์</h1>
     </v-col>
-    <v-col cols="12" sm="5">
-      <v-card rounded="lg"
-        ><v-img
-          class="white--text align-end"
-          src="https://picsum.photos/id/11/500/300"
-          align="center"
-        >
-        </v-img
-      ></v-card>
-    </v-col>
     <v-col cols="12" sm="5"
       ><v-card rounded="lg" min-height="400" color="white">
         <v-toolbar color="light-blue" dark dense flat>
           <v-toolbar-title class="body-2"> ชื่อยี่ห้อรถยนต์ </v-toolbar-title>
         </v-toolbar>
+        <v-img
+          class="white--text align-end"
+          src="https://picsum.photos/id/11/500/300"
+          align="center"
+        >
+        </v-img>
         <v-card-subtitle>001</v-card-subtitle>
         <v-card-text class="text--primary">
           <div class="dt">
