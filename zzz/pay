@@ -92,6 +92,10 @@
               width="100%"
             >
             </v-img>
+            <v-file-input
+              truncate-length="25"
+              label="แนบใบเสร็จ"
+            ></v-file-input>
           </v-card> </v-col></v-row
     ></v-col>
   </v-row>

@@ -1,12 +1,33 @@
 <template>
   <v-app>
-    <v-app-bar app color="indigo" dark flat>
+    <!-- <v-app-bar app color="indigo" dark flat>
       <v-container class="py-0 fill-height">
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         <v-spacer></v-spacer>
         <v-toolbar-title>SKYCAR</v-toolbar-title>
         <v-spacer></v-spacer>
-        <v-avatar class="mr-10" color="white" size="32"></v-avatar>
+        <div class="text-center">
+          <v-bottom-sheet v-model="sheet">
+            <template v-slot:activator="{ on, attrs }">
+              <v-avatar
+                class="hidden-sm-and-down"
+                color="grey darken-1 shrink"
+                size="32"
+                v-bind="attrs"
+                v-on="on"
+              ></v-avatar>
+            </template>
+            <v-sheet class="text-center" height="200px">
+              <v-btn class="mt-6" text color="error" @click="sheet = !sheet">
+                close
+              </v-btn>
+              <div class="py-5">
+                <v-subtitle>ผู้ใช้ : example@gmail.com</v-subtitle>
+              </div>
+              <v-btn rounded color="red" dark> ออกจากระบบ </v-btn>
+            </v-sheet>
+          </v-bottom-sheet>
+        </div>
       </v-container> </v-app-bar
     ><v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list nav dense>
@@ -31,7 +52,7 @@
           </v-list-item>
         </v-list-item-group>
       </v-list>
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
 
     <v-main class="grey lighten-3">
       <v-container> <nuxt /> </v-container
@@ -44,6 +65,7 @@ export default {
   data: () => ({
     drawer: false,
     group: null,
+    sheet: false,
   }),
 
   watch: {

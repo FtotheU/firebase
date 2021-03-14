@@ -1,0 +1,125 @@
+<template>
+  <v-row justify="center">
+    <v-col cols="12" sm="12">
+      <h1 class="text-center">รายละเอียดรถยนต์</h1>
+    </v-col>
+    <v-col cols="12" sm="4">
+      <v-card rounded="lg" min-height="575" color="white">
+        <v-toolbar color="light-blue" dark dense flat>
+          <v-toolbar-title class="body-3"> ชื่อยี่ห้อรถยนต์ </v-toolbar-title>
+        </v-toolbar>
+        <v-img
+          class="white--text align-end"
+          src="https://picsum.photos/id/11/500/300"
+          align="center"
+        >
+        </v-img>
+        <v-card-subtitle>001</v-card-subtitle>
+        <v-card-text class="text--primary">
+          <div class="dt">
+            <v-icon class="ic" x-large> mdi-bitcoin </v-icon> ราคาเช่า 5555 บาท
+          </div>
+          <div class="dt">
+            <v-icon class="ic" x-large> mdi-car-seat </v-icon> 555
+          </div>
+          <div class="dt">
+            <v-icon class="ic" x-large> mdi-treasure-chest </v-icon>555
+          </div>
+          <div class="dt"><v-icon class="ic" x-large>mdi-car</v-icon> 555</div>
+        </v-card-text>
+      </v-card>
+    </v-col>
+    <v-col cols="12" sm="6"
+      ><v-card rounded="lg" min-height="500" color="white">
+        <v-toolbar color="green" dark dense flat>
+          <v-toolbar-title class="body-3"> ชื่อยี่ห้อรถยนต์ </v-toolbar-title>
+        </v-toolbar>
+        <v-footer padless>
+          <v-col class="text-center" cols="8">
+            <v-list-item-title>จำนวนการเช่ารถยนต์ทั้งหมด</v-list-item-title>
+          </v-col>
+          <v-col class="text-center" cols="4">
+            <v-list-item-title class="text-left">5 ครั้ง</v-list-item-title>
+          </v-col>
+        </v-footer>
+        <v-simple-table height="475">
+          <template v-slot:default>
+            <thead>
+              <tr>
+                <th class="text-left">Name</th>
+                <th class="text-left">Income</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="item in desserts" :key="item.name">
+                <td>{{ item.name }}</td>
+                <td>{{ item.calories }}</td>
+              </tr>
+            </tbody>
+          </template>
+        </v-simple-table>
+      </v-card>
+    </v-col>
+
+    <v-col cols="12" sm="12"> </v-col>
+  </v-row>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      desserts: [
+        {
+          name: 'Frozen Yogurt',
+          calories: 159,
+        },
+        {
+          name: 'Ice cream sandwich',
+          calories: 237,
+        },
+        {
+          name: 'Eclair',
+          calories: 262,
+        },
+        {
+          name: 'Cupcake',
+          calories: 305,
+        },
+        {
+          name: 'Gingerbread',
+          calories: 356,
+        },
+        {
+          name: 'Jelly bean',
+          calories: 375,
+        },
+        {
+          name: 'Lollipop',
+          calories: 392,
+        },
+        {
+          name: 'Honeycomb',
+          calories: 408,
+        },
+        {
+          name: 'Donut',
+          calories: 452,
+        },
+        {
+          name: 'KitKat',
+          calories: 518,
+        },
+      ],
+    }
+  },
+}
+</script>
+<style>
+.ic {
+  margin-right: 2rem;
+}
+.dt {
+  margin: 0.8rem;
+}
+</style>
