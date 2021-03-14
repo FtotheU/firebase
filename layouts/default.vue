@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="orange" dark flat>
+    <!-- <v-app-bar app color="orange" dark flat>
       <v-container class="py-0 fill-height">
         <v-spacer></v-spacer>
         <v-toolbar-title>SKYCAR</v-toolbar-title>
@@ -28,7 +28,7 @@
           </v-bottom-sheet>
         </div>
       </v-container>
-    </v-app-bar>
+    </v-app-bar> -->
 
     <v-main class="grey lighten-3">
       <v-container> <nuxt /> </v-container
